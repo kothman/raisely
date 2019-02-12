@@ -1,0 +1,30 @@
+.container {
+    padding: 1rem;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    @media (min-width: $mobile-breakpoint) {
+	padding: 1rem 4rem;
+    }
+
+    .title {
+    }
+
+    .subtitle {
+	color: darken($color, 25);
+    }
+
+    .resume {
+	@extend h4;
+	margin-top: .5rem;
+	border-bottom: 1px solid transparent;
+    }
+
+    .title, .subtitle, .resume {
+	display: block;
+	text-align: center;
+	@media (min-width: $mobile-breakpoint) {
+	    text-align: left;
+	}
+    }
+}

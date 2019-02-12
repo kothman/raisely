@@ -1,0 +1,7 @@
+$background: lighten(black, 10);
+$color: darken(white, 10);
+$theme-color: rgba(purple, .5);
+$border: $theme-color;
+$link: lighten($theme-color, 60);
+$mobile-breakpoint: 800px;
+$max-width: 1200px;

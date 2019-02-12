@@ -1,0 +1,48 @@
+.question {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+    @media (min-width: $mobile-breakpoint) {
+	//flex-direction: row;
+    }
+    .question-text {
+	font-size: 1.5rem;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5rem;
+	padding: 1rem;
+	border: 1px solid $border;
+	border-left-width: 1rem;
+	transition: background .2s ease-in-out;
+	background: $background;	
+    }
+
+    .answer {
+	border-left: 1px solid $border;
+	margin: 0 1rem;
+	padding: 1rem;
+	transition: all .4s ease-in-out;
+
+	p {
+	    line-height: 1.25rem;
+	    font-size: 1.1rem;
+	    color: darken($color, 20);
+	}
+	
+	p:not(:last-child) {
+	    margin-bottom: 1rem;
+	}
+
+	b {
+	    color: $color;
+	}
+
+	.answer-heading {
+	    color: $link;
+	    font-weight: bold;
+	    font-size: 1.25rem;
+	    line-height: 1.25rem;
+	    border-bottom: 1px solid $link;
+	}
+    }
+}
