@@ -54,60 +54,51 @@ html, body {
   color: #e6e6e6;
   font-family: 'Roboto', sans-serif; }
 
-h1 {
+body h1 {
   font-size: 3rem;
   line-height: 3rem;
   font-family: 'Lato', sans-serif; }
-
-h2 {
+body h2 {
   font-size: 2.5rem;
   line-height: 2.5rem;
   font-family: 'Lato', sans-serif; }
-
-h3 {
+body h3 {
   font-size: 2rem;
   line-height: 2rem;
   font-family: 'Lato', sans-serif; }
-
-h4, .container .resume {
+body h4, body .container .resume, .container body .resume {
   font-size: 1.5rem;
   line-height: 1.5rem;
   font-family: 'Lato', sans-serif; }
-
-h5 {
+body h5 {
   font-size: 1rem;
   line-height: 1rem;
   font-family: 'Lato', sans-serif; }
-
-h6 {
+body h6 {
   font-size: 0.5rem;
   line-height: 0.5rem;
   font-family: 'Lato', sans-serif; }
-
-hr {
+body hr {
   margin: 1rem 0;
   border: 1px solid rgba(128, 0, 128, 0.5); }
-
-a {
+body a {
   color: rgba(255, 179, 255, 0.5);
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: all .2s ease-in-out;
   display: inline-block; }
-  a:hover {
+  body a:hover {
     border-bottom: 1px solid rgba(255, 77, 255, 0.5);
     color: rgba(255, 77, 255, 0.5); }
-
-ul li {
+body ul li {
   padding-left: 0;
   list-style: disc inside;
   line-height: 1.5rem; }
-  ul li ul {
+  body ul li ul {
     padding-left: 1rem; }
-    ul li ul li {
+    body ul li ul li {
       list-style-type: circle; }
-
-b {
+body b {
   font-weight: bold; }
 
 .container {
@@ -120,8 +111,7 @@ b {
   .container .subtitle {
     color: #a6a6a6; }
   .container .resume {
-    margin-top: .5rem;
-    border-bottom: 1px solid transparent; }
+    margin-top: .5rem; }
   .container .title, .container .subtitle, .container .resume {
     display: block;
     text-align: center; }

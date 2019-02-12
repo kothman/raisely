@@ -1,48 +1,50 @@
-@for $i from 1 through 6 {
-    h#{$i} {
-	$size: (7 - $i) * .5rem;
-	font-size: $size;
-	line-height: $size;
-	font-family: 'Lato', sans-serif;
+body {
+    @for $i from 1 through 6 {
+	h#{$i} {
+	    $size: (7 - $i) * .5rem;
+	    font-size: $size;
+	    line-height: $size;
+	    font-family: 'Lato', sans-serif;
+	}
     }
-}
 
-hr {
-    margin: 1rem 0;
-    border: 1px solid $border;
-}
-
-a {
-    color: $link;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: all .2s ease-in-out;
-    display: inline-block;
-    
-    &:hover {
-	$link-hover: darken($link, 20);
-	border-bottom: 1px solid $link-hover;
-	color: $link-hover;
+    hr {
+	margin: 1rem 0;
+	border: 1px solid $border;
     }
-}
 
-ul {
-
-    li {
-	padding-left: 0;
-	list-style: disc inside;
-	line-height: 1.5rem;
+    a {
+	color: $link;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: all .2s ease-in-out;
+	display: inline-block;
 	
-	ul {
-	    padding-left: 1rem;
+	&:hover {
+	    $link-hover: darken($link, 20);
+	    border-bottom: 1px solid $link-hover;
+	    color: $link-hover;
+	}
+    }
+
+    ul {
+
+	li {
+	    padding-left: 0;
+	    list-style: disc inside;
+	    line-height: 1.5rem;
 	    
-	    li {
-		list-style-type: circle;
+	    ul {
+		padding-left: 1rem;
+		
+		li {
+		    list-style-type: circle;
+		}
 	    }
 	}
     }
-}
 
-b {
-    font-weight: bold;
+    b {
+	font-weight: bold;
+    }
 }
